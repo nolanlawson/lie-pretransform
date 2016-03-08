@@ -1,0 +1,34 @@
+{
+  "name": "lie-pretransform",
+  "version": "1.0.0",
+  "description": "lie, with Browserify transforms already applied",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "build-node && build-browser",
+    "build-node": "ncp node_modules/lie/lib/index.js index.js",
+    "build-browser": "browserify-transform-cli inline-process-browser < node_modules/lie/lib/index.js | browserify-transform-cli unreachable-branch-transform | browserify-transform-cli es3ify > browser.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nolanlawson/lie-pretransform.git"
+  },
+  "keywords": ["lie", "promise"],
+  "author": "Nolan Lawson <nolan@nolanlawson.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/nolanlawson/lie-pretransform/issues"
+  },
+  "homepage": "https://github.com/nolanlawson/lie-pretransform#readme",
+  "devDependencies": {
+    "browserify-transform-cli": "^1.0.0",
+    "es3ify": "^0.2.1",
+    "inline-process-browser": "^2.0.0",
+    "lie": "^3.0.2",
+    "ncp": "^2.0.0",
+    "unreachable-branch-transform": "^0.5.0"
+  },
+  "browser": {
+    "index.js": "browser.js"
+  },
+  "files": ["index.js", "browser.js"]
+}
