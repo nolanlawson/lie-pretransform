@@ -1,6 +1,6 @@
 {
   "name": "lie-pretransform",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "lie, with Browserify transforms already applied",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/nolanlawson/lie-pretransform.git"
   },
-  "keywords": ["lie", "promise"],
+  "keywords": [
+    "lie",
+    "promise"
+  ],
   "author": "Nolan Lawson <nolan@nolanlawson.com>",
   "license": "Apache-2.0",
   "bugs": {
@@ -30,5 +33,8 @@
   "browser": {
     "./index.js": "./browser.js"
   },
-  "files": ["index.js", "browser.js"]
+  "files": [
+    "index.js",
+    "browser.js"
+  ]
 }
