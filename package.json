@@ -4,7 +4,7 @@
   "description": "lie, with Browserify transforms already applied",
   "main": "index.js",
   "scripts": {
-    "prepublish": "build-node && build-browser",
+    "prepublish": "npm run build-node && npm run build-browser",
     "build-node": "ncp node_modules/lie/lib/index.js index.js",
     "build-browser": "browserify-transform-cli inline-process-browser < node_modules/lie/lib/index.js | browserify-transform-cli unreachable-branch-transform | browserify-transform-cli es3ify > browser.js"
   },
