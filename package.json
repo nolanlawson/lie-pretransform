@@ -1,6 +1,6 @@
 {
   "name": "lie-pretransform",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "lie, with Browserify transforms already applied",
   "main": "index.js",
   "scripts": {
