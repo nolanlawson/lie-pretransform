@@ -28,7 +28,7 @@
     "unreachable-branch-transform": "^0.5.0"
   },
   "browser": {
-    "index.js": "browser.js"
+    "./index.js": "./browser.js"
   },
   "files": ["index.js", "browser.js"]
 }
