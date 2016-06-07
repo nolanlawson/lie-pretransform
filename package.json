@@ -35,5 +35,8 @@
   "files": [
     "index.js",
     "browser.js"
-  ]
+  ],
+  "dependencies": {
+    "immediate": "^3.0.5"
+  }
 }
