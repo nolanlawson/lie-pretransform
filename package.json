@@ -23,10 +23,11 @@
   },
   "homepage": "https://github.com/nolanlawson/lie-pretransform#readme",
   "devDependencies": {
-    "browserify": "^13.0.0",
-    "bundle-collapser": "^1.2.1",
-    "derequire": "^2.0.3",
-    "ncp": "^2.0.0"
+    "browserify": "13.0.1",
+    "bundle-collapser": "1.2.1",
+    "derequire": "2.0.3",
+    "lie": "3.0.4",
+    "ncp": "2.0.0"
   },
   "browser": {
     "./index.js": "./browser.js"
@@ -34,8 +35,5 @@
   "files": [
     "index.js",
     "browser.js"
-  ],
-  "dependencies": {
-    "lie": "^3.0.2"
-  }
+  ]
 }
