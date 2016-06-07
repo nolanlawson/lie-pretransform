@@ -37,6 +37,6 @@
     "browser.js"
   ],
   "dependencies": {
-    "immediate": "^3.0.5"
+    "immediate": "3.2.2"
   }
 }
