@@ -1,6 +1,8 @@
 lie-pretransform
 =====
 
+**Deprecated:** lie v3.1.0 is now pretransformed, so there's no more need for `lie-pretransform`.
+
 [lie](https://github.com/calvinmetcalf/lie), but with its Browserify transforms
 applied as a build step. So it doesn't assume you're using Browserify.
 
